@@ -114,3 +114,5 @@ export const planets: Planet[] = [
     funFact: "Los vientos en Neptuno pueden alcanzar los 2.000 km/h.",
   },
 ];
+
+//Aún no he modificado código
