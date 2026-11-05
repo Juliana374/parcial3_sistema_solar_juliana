@@ -115,4 +115,3 @@ export const planets: Planet[] = [
   },
 ];
 
-//Aún no he modificado código
