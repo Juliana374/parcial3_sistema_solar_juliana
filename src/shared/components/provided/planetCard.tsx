@@ -1,5 +1,5 @@
 import { Planet } from "@/types/planet";
-
+import { useState } from "react"
 
 const PLANET_LABEL: Record<Planet['type'], string> = {
   name: 'Nombre',
@@ -11,8 +11,7 @@ const PLANET_LABEL: Record<Planet['type'], string> = {
 
 
 export function Caracteristics({ planet }: { planet: planet }) {
-  const photo = planet.photos?.[0]?.url;
-
+  
   return (
     <Link href={`/planets/${planet.id}`} className="block transition-transform hover:-translate-y-0.5">
       <Card className="h-full">
@@ -23,7 +22,7 @@ export function Caracteristics({ planet }: { planet: planet }) {
               <p className="truncate text-sm font-semibold text-navy-900">{planet.name}</p>
               <p className="truncate text-xs text-navy-500">{planet.breed ?? ' '}</p>
               <div className="mt-1.5">
-                <Badge tone="neutral">{PLANET_LABEL[planet.species]}</Badge>
+                <Badge tone="neutral">{PLANET_LABEL[planet.type]}</Badge>
               </div>
             </div>
           </div>
@@ -32,3 +31,7 @@ export function Caracteristics({ planet }: { planet: planet }) {
     </Link>
   );
 }
+
+
+
+
