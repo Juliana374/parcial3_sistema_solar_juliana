@@ -6,6 +6,11 @@ const PLANET_LABEL: Record<Planet['type'], string> = {
   color: 'Color',
   Type: 'tipo',
   Distance: 'Distancia',
+  Moons: "Lunas"
+  dayLengthHours: "duración del día en horas"
+  temperature: "Temperatura"
+  description: "Descripción"
+  funFact: "Dato divertido"
   other: 'Otro',
 };
 
